@@ -1,4 +1,4 @@
-1. * Ways to create a new type/class in java (class, interface, …)
+# 1. * Ways to create a new type/class in java (class, interface, …)
      class MyClass {
      // field, constructor, and
      // method declarations
@@ -46,7 +46,7 @@ Deserialization of objects is nothing more than the creation of an object from i
 ObjectInputStream inStream = new ObjectInputStream(input stream);
 MyObject = (MyObject) inStream.readObject() object;
 
-2. *‘Inner’ classes: classification, differences, best practice.*
+#  2. *‘Inner’ classes: classification, differences, best practice.*
    Nested classes are divided into two categories: non-static and static. Non-static nested classes are called inner classes. Nested classes that are declared static are called static nested classes.
 
 Non-static nested classes (inner classes) have access to other members of the enclosing class, even if they are declared private.
@@ -67,14 +67,14 @@ Inner classes – exist only inside outer class. And we have  two additional opt
 -local classes (has name, but exist only inside method body).
 -anonymous classes (unnamed, exist only inside method body).
 
-4. *Naming convention for classes, best practice.*
+#  4. *Naming convention for classes, best practice.*
 Class names should be nouns, in mixed case with the first letter of each 
 internal word capitalized. Try to keep your class names simple and descriptive.
 Use whole words-avoid acronyms and abbreviations (unless the abbreviation is 
 much more widely used than the long form, such as URL or HTML).
 *https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html*
 
-5. *Keywords to be used for creating new classes/types.*
+# 5. *Keywords to be used for creating new classes/types.*
    super - Refers to superclass (parent) objects
    abstract - A non-access modifier. Used for classes and methods: An abstract class cannot be used to create objects (to access it, it must be inherited from another class). An abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)
    boolean, char, int, String, double, long.. – create new field.
@@ -83,7 +83,7 @@ much more widely used than the long form, such as URL or HTML).
    Static – a non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class.
    new - creates new objects
 6. **
-7. *Byte code in java.*
+#  7. *Byte code in java.*
    Bytecode in Java is an intermediate machine-independent code. It is a set of 
    instructions for Java Virtual Machine and it acts pretty similar to the assembler in C++. In general, bytecode is a code that lies between low-level and high-level language. The bytecode is not processed by the processor. It is processed by the Java Virtual Machine (JVM). The job of the JVM is to call all the required resources to compile the Java program and make the bytecode independent. It is the biggest reason why java is known as a platform-independent language. The intermediate code can run on any of the platforms such as Windows, macOS, and Linux.
    Program: Program is a .java file. It consists of the code that you have written.
@@ -93,7 +93,7 @@ much more widely used than the long form, such as URL or HTML).
    Machine Code: Now, the machine generates its own machine code in which the byte code is running. That means, its own machine-dependent code to run the .java file.
    The only essential requirement for running the bytecode is the installation of basic java in any platform.
  ![img.png](img.png)
-8. *Structure of a file with extension ‘.class’.*
+# 8. *Structure of a file with extension ‘.class’.*
    Structure of a file with extension ‘.class’.
    The general form of a file containing Java source code may be as follows:
 - single package statement (optional);
